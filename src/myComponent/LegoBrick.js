@@ -28,10 +28,14 @@ const LegoBrick = () => {
         // Animation loop
         const animate = () => {
             requestAnimationFrame(animate);
+
+            // Update rotation values for animation
             brick.rotation.x += 0.01;
             brick.rotation.y += 0.01;
+
             renderer.render(scene, camera);
         };
+
         animate();
 
         // Clean up on component unmount
