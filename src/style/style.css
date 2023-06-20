@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    gap: 45em;
+    gap: 40em;
 }
 
 .navigation-items {
@@ -74,7 +74,9 @@ body {
 .search-input input {
     margin-left: 2px;
     border-radius: 10px;
-    border: 0px;
+    border: 0;
+    padding: 0;
+    margin-top: -0.5em;
 }
 
 .search-input input:focus {
@@ -156,4 +158,11 @@ input::placeholder {
     margin-top: 2em;
     font-size: 2em;
     color: purple;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    padding: 1em;
 }
