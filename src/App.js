@@ -51,6 +51,7 @@ const MyComponent = () => {
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '400px', border: '1px solid black' }}>
             <LegoBrick style={{ width: '200px', height: '200px', border: '1px solid black' }} />
         </div> */}
+          <div className='list-heading'><h3>List of LEGO Colors</h3></div>
           <div className='color-container'>
             {currentColors.map((item) => (
               <div className="color-items">

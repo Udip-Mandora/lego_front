@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Expletus Sans', sans-serif;
+}
+
 .header-navigation {
     display: flex;
     flex-direction: row;
@@ -107,13 +113,13 @@ input::placeholder {
 }
 
 .brick-icon {
-    transform: translate(0, -1.5rem);
+    transform: translate(0, -0.5rem);
     transition: transform 500ms ease-in-out;
     /* filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4)); */
 }
 
 .brick-icon:hover {
-    transform: translate(-1.5rem, -3.5rem) rotate(-10deg);
+    transform: translate(0, -3rem) rotate(-360deg);
 }
 
 .colors-page {
@@ -143,4 +149,11 @@ input::placeholder {
     border-color: #101010;
     background: #ffe400;
     color: #101010;
+}
+
+.list-heading {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+    color: purple;
 }
