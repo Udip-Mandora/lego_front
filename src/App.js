@@ -35,6 +35,7 @@ const MyComponent = () => {
   return (
     <>
       <head>
+        <title>BrickMMO Colors</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
       </head>
       <main>
@@ -56,9 +57,15 @@ const MyComponent = () => {
             {currentColors.map((item) => (
               <div className="color-items">
                 <div className='color-shape'>
-                  <p className='brick-icon'><i className=" fas fa-cube brick-icon" style={{ color: '#' + item.rgb }}></i></p>
+                  <p className='brick-icon'><i className="fas fa-cube brick-icon" style={{ color: '#' + item.rgb }}></i></p>
                 </div>
                 <p key={item.id} color={item.rgb}>{item.name}</p>
+                <p>RGB Pattern: #{item.rgb}</p>
+                <p>Transparency: {item.transparency}</p>
+                <p>Brick Link Id: {item.brickLinkExtId}</p>
+                <p>Description: {item.brickLinkExtDesc}</p>
+                <p>Lego Id: {item.LegoExtId}</p>
+                <p>Description: {item.LegoExtDesc}</p>
               </div>
             ))}
           </div>

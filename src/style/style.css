@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    gap: 40em;
+    gap: 60em;
 }
 
 .navigation-items {
@@ -121,7 +121,7 @@ input::placeholder {
 }
 
 .brick-icon:hover {
-    transform: translate(0, -3rem) rotate(-360deg);
+    transform: translate(0, -2rem) rotate(-360deg);
 }
 
 .colors-page {
@@ -165,4 +165,12 @@ input::placeholder {
     z-index: 1;
     background-color: white;
     padding: 1em;
+    display: block;
+    /* border: 0.1px solid black; */
+}
+
+#dropdown-icon {
+    font-size: 1.7em;
+    padding: 5px;
+    margin-top: 1em;
 }
